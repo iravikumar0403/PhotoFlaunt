@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0;
+  color: rgb(218, 58, 119);
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+
+.input-wrapper label {
+  display: block;
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 20px auto 0px auto;
+  background-color: rgb(132, 255, 60);
+  white-space: nowrap;
+  color: #000;
+}
+
+.input-wrapper p {
+  margin: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+input {
+  display: none;
+}
+
+.errorMsg {
+  width: fit-content;
+  padding: 20px 10px;
+  color: rgb(243, 132, 132);
+  margin: auto;
+}
+
+.progress-div {
+  color: #fff;
+  text-align: center;
+  margin: 10px auto;
+  background-color: rgb(218, 58, 119);
+  position: fixed;
+}
+
+.imageGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px auto 10px auto;
+  max-width: 1080px;
+}
+
+.imageGrid img {
+  margin: 0.2rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #b6b6b6;
+  transition: all 0.3s ease;
+  opacity: 0.9;
+}
+
+.imageGrid img:hover {
+  box-shadow: 0px 0px 10px #616161;
+  opacity: 1;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(4px);
+}
+
+.modal img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  margin: auto;
+  max-width: 80vw;
+  border: 4px solid #fff;
+  border-radius: 5px;
+}
